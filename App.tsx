@@ -13,7 +13,7 @@ import {
 
 import { ThemeProvider } from "styled-components/native";
 import theme from './src/styles/theme';
-import {Login} from './src/screens'
+import {Login} from './src/screens';
 
 
 
@@ -34,22 +34,12 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <View style={styles.container}>
-        <Text>Wallet App</Text>
-        <Login />
-      </View>
+     <Login/>
     </ThemeProvider>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+
 
 
 
